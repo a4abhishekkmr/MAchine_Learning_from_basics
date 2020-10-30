@@ -1,0 +1,37 @@
+import numpy as np #elias/nickname
+
+x=np.array([2,3,9,3])  #1st column
+x=x.reshape(-1,1)  #1D into 2d array
+
+y=np.array([20,30,90,30])  #2nd column
+
+from sklearn.linear_model import LinearRegression
+
+mind=LinearRegression() #Empty mind creted and linked to Linear REgression
+
+# empty mind == model  == formula (y = p*x)
+#y-prediction p-coeffiecient x=known predictator
+ #we have to put or dump data in mind to get experience
+
+#in fit 1st argument:x    == hours(predictor)  : x should be in 2d
+      # 2nd arhgument:y   == marks(prediction)
+
+mind.fit(x,y)
+
+# machine finally learnt/model trained
+
+    # mind will say we cant store millions of data only stores 
+    #coefficient for the linear equation(p)
+
+mind.coef_
+
+#prediction 1
+
+mind.predict([[6 ]])
+
+# directly predicted the prediction without any 2 step process. direct way
+
+10*6
+
+#  10 is the coefficient and 6 is the predictor valuee gives out prediction as output.
+

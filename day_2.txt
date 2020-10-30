@@ -1,0 +1,47 @@
+marks=[60,40,70,55]  
+
+marks
+
+import numpy
+
+marks=numpy.array(marks)
+
+hours=[6,4,7,5]  
+
+hours=numpy.array(hours)
+
+hours
+
+#we need to find the prediction juct by gining hours we have to find marks
+
+hours=hours.reshape(-1, 1)   #as error says needed into 2d
+
+LinerRegression()
+
+#error because it dont have function available
+
+#it must be inside some package
+
+#and name is sklearn
+
+from sklearn.linear_model import LinearRegression
+
+mind=LinearRegression() #set an empty mind
+
+#mind is created on cpu
+
+#for liner expression prblem we need linear regression function
+
+#dumping data in this empty mind is done by fit command
+
+mind.fit(hours, marks) #(predictor,final output)
+#predictor are columns which helps in prediction
+#fit the experience or dump the data in empty mind and train the mind.
+
+experiment_hours=[[9]]    #input of predictor
+
+experiment_marks=mind.predict(experiment_hours) # prediction 1
+
+experiment_marks # retrieving the prediction
+
+## got output

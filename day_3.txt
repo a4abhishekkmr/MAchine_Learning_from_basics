@@ -1,0 +1,39 @@
+db=[['Abhi',6,60],['vimal',4,40],['chup', 7, 70],['krish', 5, 55]]
+
+db
+
+
+type(db)
+
+#we need to work on colums so we need to work on numpy array
+
+#convert that list into numpy array
+
+import numpy
+ds = numpy.array(db)
+
+ds
+
+ds[:,2]   #all 3rd column which shows marks of students
+
+# to predict something that you dont know that's what
+# our today's task
+
+#as this is a prediction table with one attribute blank.
+
+#purpose is to ask futyre thing using machine learning
+
+# let me tell you the input 
+
+# name , total hours of study,  marks
+
+# marks is so much related to hours of study which we need to predict
+
+marks=[60,40,70,55]  #starting from simple problem not complex one
+
+import numpy
+
+marks=numpy.array(marks) #coverting all list elements into numpy array
+
+marks
+

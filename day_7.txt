@@ -1,0 +1,52 @@
+import pandas
+
+dataset=pandas.read_csv('sample1.csv')
+
+dataset
+
+dataset.columns
+
+x=dataset['OTT']
+
+x
+
+y=dataset['hours']
+
+y
+
+import numpy
+
+type(x)
+
+x=numpy.array(x)
+
+x=x.reshape(-1,1)
+
+#y=numpy.array(y)
+
+from sklearn.linear_model import LinearRegression
+
+model=LinearRegression()
+
+model.fit(x,y)
+
+model.predict([[0]])
+
+c=model.coef_
+
+c
+
+model.intercept_
+
+#which is equals to prediction in [0]
+
+import joblib
+
+#we are giving someone a direct app which will direcly find answer 
+#insted of writing so much
+
+
+joblib.dump(model,'sample1.pkl')
+#all the things in mind is stored now here,
+
+

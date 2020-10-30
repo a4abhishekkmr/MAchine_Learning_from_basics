@@ -1,0 +1,137 @@
+import numpy
+
+a=numpy.array([["Abhi",2,22],["Kumar",3,33]])
+
+type(a)
+
+a.shape   #Rows and colums-shows 2D or not
+
+a
+
+score=a[:,1]  # all  2nd column
+
+score
+
+type(score)
+
+score.shape
+
+# shows 1D
+
+# 1D also called vector
+
+# more than 1 will makes it matrix
+
+score.mean()
+
+# error
+# bychance this is number but not as a normal number, its insde U - Unicode
+
+#TypeError: cannot perform reduce with flexible type
+
+score.dtype
+
+#Anything start with single quote / double quote called string in python.
+
+score
+
+s=score.astype(int)
+
+# now number
+
+s
+
+type(s)
+
+s.dtype
+
+# 32 bits ----- 4bytes
+
+s.max()
+
+s.mean()
+
+s.min()
+
+# we done analysis here
+
+a
+
+# here it is 0,1,2 like this 
+
+a.dtype
+
+# its unicode here
+
+b=numpy.array([1,2,3])
+
+b.dtype
+
+# no unicode here
+
+c=numpy.array(["a","b","c"])
+
+c.dtype
+
+# all this unicode must have its diffrent property
+
+a
+
+a.dtype = { 'names' : ['Studentname' , 'phone', 'score'], 'formats': [numpy.str, numpy.int32, numpy.int32] }
+
+#tagged the column names
+a
+
+a.dtype = { 'names' : ['Studentname' , 'phone', 'score'], 'formats': [numpy.unicode, numpy.str, numpy.int32, numpy.int32] }
+
+a
+
+#   dtype=[('Studentname', '<U'), ('phone', '<U'), ('score', '<i4')]
+
+a['phone']
+
+d=numpy.array([1,2,3])
+
+d.dtype={'names':['ID'], 'formats':[numpy.int32]}
+
+d
+
+
+d['ID']
+
+##############################################
+
+# now pandas will work
+
+#############################################
+
+import pandas
+
+dir(pandas)
+
+da=pandas.read_csv('salary-Copy1.csv')
+
+da
+
+da['experience']
+
+da[['experience','testscore']]
+
+#HUHUHUHUHU
+
+#same folder me laake kr do read
+
+#to direct read hoga
+
+# it shows index location too
+
+da.iloc[1]
+
+# complete details of 1
+
+da.iloc[1,2]   #1 ka 2
+
+type(da)
+
+#dataframe
+

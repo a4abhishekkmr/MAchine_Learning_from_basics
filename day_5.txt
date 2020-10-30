@@ -1,0 +1,37 @@
+import numpy
+
+y=numpy.array([50,80,20,30])
+
+x=numpy.array([5,8,2,3])
+
+import matplotlib.pyplot as plt
+# for graph of linear regression we need to import library
+# which is matplotlib
+
+plt.scatter(x,y)
+# to view the points of graph
+
+plt.plot(x,y)
+# to view th eline only not the points
+
+# jupyter help: shift + tab
+
+plt.plot(x,y ,marker='o') # taken help and done
+
+plt.plot(x,y ,marker='X') # another from help
+
+from sklearn.linear_model import LinearRegression
+
+# y = c*x      internally this formula created
+
+# but only dont know the value of C
+
+x=x.reshape(-1,1)
+
+model=LinearRegression()
+
+model.fit(x,y)
+
+model.coef_
+
+# alll set
