@@ -1,4 +1,4 @@
-#MAchine laerning codes from very basics#
+#MAchine learning codes from very basics#
 =========================================
 
 ML and DSA are the two main Core topics needed as tools/concept in this technical world.
